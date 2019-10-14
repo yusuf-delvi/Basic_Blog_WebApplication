@@ -1,0 +1,20 @@
+{
+  "name": "basicblogapplication",
+  "version": "1.0.0",
+  "description": "Basic blog website for beginner Blogger",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "yusuf delvi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-sanitizer": "^1.0.4",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.2.1"
+  },
+  "devDependencies": {}
+}
