@@ -4,10 +4,11 @@ var bodyParser = require("body-parser"),
   mongoose = require("mongoose"),
   express = require("express"),
   port = process.env.IP || 3000,
+  dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/restful_blog_app',
   app = express();
 
 // APP CONFIG
-mongoose.connect('mongodb://localhost:27017/restful_blog_app', {
+mongoose.connect(dbUrl, {
   useNewUrlParser: true
 });
 app.set('view engine', 'ejs');
@@ -120,5 +121,5 @@ app.delete('/blogs/:id', function (req, res) {
 
 
 app.listen(port, function () {
-  console.log('RESTful blog app Server has been started');
+  console.log(`RESTful blog running on PORT: ${port}`);
 })
