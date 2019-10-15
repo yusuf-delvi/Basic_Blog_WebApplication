@@ -3,7 +3,7 @@ var bodyParser = require("body-parser"),
   expressSanitizer = require("express-sanitizer"),
   mongoose = require("mongoose"),
   express = require("express"),
-  port = process.env.IP || 3000,
+  port = process.env.PORT || 3000,
   dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/restful_blog_app',
   app = express();
 
